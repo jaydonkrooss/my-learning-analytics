@@ -72,7 +72,13 @@
         # Local database port
         "PORT": 3306,
         # Local database root password (optional)
-        "ROOT_PASSWORD": "student_dashboard_root_pw"
+        "ROOT_PASSWORD": "student_dashboard_root_pw",
+        "OPTIONS": {
+            "charset": "utf8mb4",
+            # Option to enforce SSL connection to MySQL DB
+            #"ssl": { "ca": "/secrets/ssl-ca-filename.pem" },
+            #"ssl_mode": "REQUIRED",
+        },
     },
     # Default Canvas Data id increment for course id, user id, etc
     #"CANVAS_DATA_ID_INCREMENT": 17700000000000000,
